@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Eczar", serif;
+}
+
+.main_box{
+    background: url(bg.jpg);
+    height: 1300px;
+    background-size: cover;
+      background-attachment: fixed;;
+
+}
+
+.btn_one{
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(227, 153, 89, 0.957);
+    box-shadow: 0 0 50px rgb(28, 1, 1) ;
+    transition: left 0.5s ease;
+}
+
+.sidebar_menu.logo{
+    position: absolute;
+    width: 100%;
+    letter-spacing: 60px;
+    box-shadow: 0 0 4px rgba(245, 245, 245, 0.443);
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;                                                                                                                                                                   
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.sidebar_menu .btn_two {
+    color: gray;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    cursor: pointer;
+
+    
+}
+
+.sidebar_menu .menu{
+    color: rgb(1, 9, 16);
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li  {
+    height: 5px;
+    margin-top: 40px ;
+    padding: 14px 20px 30px
+
+}
+
+.sidebar_menu .menu i,a {
+    color: rgb(19, 3, 3);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+
+
+#check {
+    display: none;
+  }
+  
+
+
+
+  .sidebar_menu .menu li:hover {
+    box-shadow: 0 0 12px rgba(37, 29, 29, 0.829) ;
+  }
+  .sidebar_menu .social_media i{
+                                                                                                                                                                 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-top: 20px;
+    opacity: 0.8;
+  }
+
+  .btn_one:hover i {
+    font-size: 30px ;
+  }
+
+  .btn_two:hover i {
+    color: black;
+    font-size: 30px;
+  }
+
+  .sidebar_menu .social_media i:hover {
+    color: rgb(203, 202, 202);
+    opacity: 1;
+    transform: scale(1.3)
+  }
+
+  #check:checked ~ .sidebar_menu{
+    left: 0;
+
+  }
+
+  #check:checked ~ .btn_one{
+    opacity: 0;
+  }
+
+  .all_context {
+    color: white;
+    text-align: center;
+  }
+
+  .photographs img {
+    width: 200px; /* Set the width of the image to 100% of its container */
+    height: 150px; /* Allow the image to scale proportionally */
+    border-radius: 8px; /* Add rounded corners to the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px; /* Add some space below each image */
+    inset-block: 10px;
+    transition: 0.2s;
+    cursor:pointer;
+  }
+  
+  .photographs img:hover {
+    transform: scale(1.5); /* Scale the image to 120% of its original size on hover */
+    box-shadow: 0 0 600px rgba(0, 0, 0, 2) ;
+  }
+  
+
+  button {
+    background-color: blue; /* Example button color */
+    color: white; /* Text color for the button */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+
+  
+  
+  label {
+    display: block; /* Make labels display as block elements for better spacing */
+  }
+
+
+  input,
+  textarea,
+  button {
+    margin-bottom: 10px; /* Add space below form elements */
+
+  }
+
+  button:hover{
+    background-color: rgb(2, 2, 177);
+  }
+
+ .all_context h1 , h2 ,p{
+  color: black;
+ }
+
+ .all_context h1 , h2 {
+  padding: 5px;
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 50px;
+  border-style: dashed;
+  background-color: beige;
+  transition: 0.5s;
+  
+  cursor:default;
+  
+ }
+
+ .all_context h1 , h2:hover{
+  border-style:solid;
+ }
+
+ 
